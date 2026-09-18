@@ -159,19 +159,6 @@ src/main/resources/assets/motorcycleaddon/sounds/sidecar_mg.ogg
 
 ## 7. 実装上の注意点
 
-### OBJモデルのUV
-
-`tools/make_tier_models.py`が生成する面は**頂点位置のみ**を参照します
-(`f 1 2 3 4`の形式)。
-
-前提MODのOBJパーサーは、面に`vt`インデックスがあるとUVリストを直接
-参照するため、`vt`行を出力せずに`f 1/1 2/2`形式を書くと**モデル読み込み
-時に例外が発生します**。UVを持たないモデルでは位置のみの形式にして
-ください。
-
-同梱の`sport_bike.obj`は`vt`を持つ手描きモデルで、こちらは通常どおり
-`f v/vt`形式です。
-
 ### 車両定義JSONのスキーマ
 
 実装と突き合わせて確認した要点です。
@@ -211,12 +198,4 @@ src/main/resources/
   assets/motorcycleaddon/weapons/ 機関銃定義
   assets/motorcycleaddon/models/obj/  モデル5種
 
-tools/
-  make_vehicles.py       車両定義の生成
-  make_tier_models.py    Tier1/2/3/5のモデル生成
-  make_model_reference.py  旧サンプルモデル生成(参考)
 ```
-
-車両定義とモデルはスクリプトから生成しています。細部を調整する場合は、
-スクリプト側を編集して再生成するか、生成されたファイルを直接編集して
-ください(その場合、スクリプトの再実行で上書きされます)。
