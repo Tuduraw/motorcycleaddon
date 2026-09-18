@@ -1,0 +1,15 @@
+{
+  "itemGroup.motorcycleaddon.motorcycles": "Motorcycles",
+  "item.motorcycleaddon.category.motorcycle": "Motorcycle",
+
+  "item.motorcycleaddon.motorcycle_spawner_t1": "Motorcycle (Tier 1)",
+  "item.motorcycleaddon.motorcycle_spawner_t2": "Motorcycle (Tier 2)",
+  "item.motorcycleaddon.motorcycle_spawner_t3": "Motorcycle (Tier 3)",
+  "item.motorcycleaddon.motorcycle_spawner_t4": "Motorcycle (Tier 4)",
+  "item.motorcycleaddon.motorcycle_spawner_t5": "Motorcycle (Tier 5)",
+
+  "entity.motorcycleaddon.motorcycle": "Motorcycle",
+
+  "key.category.motorcycleaddon.motorcycle": "Motorcycle Addon",
+  "key.motorcycleaddon.acrobatics": "Acrobatics (wheelie)"
+}

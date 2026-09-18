@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "motorcycleaddon",
+  "version": "1.0.0",
+  "name": "Motorcycle Addon",
+  "description": "Adds a two-wheeler vehicle to Tudur's Vehicle Mod, with cornering lean on top of the base mod's own ground-vehicle physics.",
+  "authors": [ "Tuduraw" ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/motorcycleaddon/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [ "com.example.motorcycleaddon.MotorcycleAddon" ],
+    "client": [ "com.example.motorcycleaddon.client.MotorcycleAddonClient" ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "fabric-api": "*",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "tudursvehiclemod": ">=1.0.0"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "entity_type": "motorcycleaddon:motorcycle",
+  "model": "motorcycleaddon:models/obj/sidecar.obj",
+  "texture": "motorcycleaddon:textures/vehicle/motorcycle.png",
+  "display_name": "Sidecar",
+  "scale": 1.0,
+  "width": 1.6,
+  "height": 1.3,
+  "max_speed": 1.1,
+  "acceleration": 0.05,
+  "turn_speed": 2.6,
+  "step_height": 0.6,
+  "gravity": -0.04,
+  "reverse_throttle": 0.35,
+  "weight_type": "car",
+  "engine_sound_volume": 3.0,
+  "max_health": 30.0,
+  "armor_damage_factor": 1.0,
+  "damage_factor": 1.0,
+  "max_fuel": 700.0,
+  "inventory_size": 9,
+  "spawn_item": {
+    "display_name": "Sidecar",
+    "tier": 3
+  },
+  "seats": [
+    {
+      "name": "rider",
+      "offset_x": 0.0,
+      "offset_y": 0.35,
+      "offset_z": -0.1,
+      "driver": true
+    },
+    {
+      "name": "gunner",
+      "offset_x": 0.72,
+      "offset_y": -0.05,
+      "offset_z": -0.2
+    }
+  ],
+  "wheel_parts": [
+    {
+      "part": "$wheel0",
+      "pivot_x": 0.0,
+      "pivot_y": 0.35,
+      "pivot_z": 0.85,
+      "steer_angle": 28.0,
+      "steer_axis_x": 0.0,
+      "steer_axis_y": 1.0,
+      "steer_axis_z": 0.0,
+      "steer_pivot_x": 0.0,
+      "steer_pivot_y": 0.35,
+      "steer_pivot_z": 0.85
+    },
+    {
+      "part": "$wheel1",
+      "pivot_x": 0.0,
+      "pivot_y": 0.35,
+      "pivot_z": -0.85
+    },
+    {
+      "part": "$wheel2",
+      "pivot_x": 0.72,
+      "pivot_y": 0.35,
+      "pivot_z": -0.3
+    }
+  ],
+  "steering_wheel_parts": [
+    {
+      "part": "handlebar",
+      "pivot_x": 0.0,
+      "pivot_y": 1.2,
+      "pivot_z": 0.7,
+      "axis_x": 0.0,
+      "axis_y": 1.0,
+      "axis_z": 0.0,
+      "max_angle": 28.0
+    },
+    {
+      "part": "fork",
+      "pivot_x": 0.0,
+      "pivot_y": 0.7,
+      "pivot_z": 0.8,
+      "axis_x": 0.0,
+      "axis_y": 1.0,
+      "axis_z": 0.0,
+      "max_angle": 28.0
+    }
+  ],
+  "weapons": [
+    {
+      "seat_index": 1,
+      "weapon_name": "sidecar_mg",
+      "projectile_item": "minecraft:iron_nugget",
+      "aim_range": {
+        "default_yaw": 0.0,
+        "min_yaw": -60.0,
+        "max_yaw": 60.0,
+        "min_pitch": -50.0,
+        "max_pitch": 10.0
+      },
+      "offsets": [
+        {
+          "x": 0.72,
+          "y": 1.06,
+          "z": 0.8,
+          "mount_yaw": 0.0,
+          "mount_pitch": 0.0
+        }
+      ],
+      "turret_rotation_speed": 6.0
+    }
+  ],
+  "weapon_parts": [
+    {
+      "part": "$mg_mount",
+      "seat_index": 1,
+      "yaw_follow": true,
+      "pitch_follow": false,
+      "pivot_x": 0.72,
+      "pivot_y": 0.92,
+      "pivot_z": 0.1
+    },
+    {
+      "part": "$mg_barrel",
+      "seat_index": 1,
+      "yaw_follow": true,
+      "pitch_follow": true,
+      "pivot_x": 0.72,
+      "pivot_y": 1.06,
+      "pivot_z": 0.1,
+      "recoil_distance": 0.08,
+      "aim_range": {
+        "default_yaw": 0.0,
+        "min_yaw": -60.0,
+        "max_yaw": 60.0,
+        "min_pitch": -50.0,
+        "max_pitch": 10.0
+      }
+    }
+  ],
+  "motorcycle": {
+    "max_lean_degrees": 0.0,
+    "lean_smoothing": 0.15,
+    "full_lean_speed": 0.35,
+    "upright_turn_penalty": 0.9,
+    "enable_acrobatics": false,
+    "wheelie_angle_degrees": 35.0,
+    "wheelie_rate": 0.08
+  }
+}

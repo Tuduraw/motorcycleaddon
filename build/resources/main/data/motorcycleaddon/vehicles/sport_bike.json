@@ -1,0 +1,87 @@
+{
+  "entity_type": "motorcycleaddon:motorcycle",
+  "model": "motorcycleaddon:models/obj/sport_bike.obj",
+  "texture": "motorcycleaddon:textures/vehicle/motorcycle.png",
+  "display_name": "Sport Bike",
+  "scale": 1.0,
+  "width": 0.8,
+  "height": 1.2,
+  "max_speed": 2.0,
+  "acceleration": 0.09,
+  "turn_speed": 5.5,
+  "step_height": 0.6,
+  "gravity": -0.04,
+  "reverse_throttle": 0.35,
+  "weight_type": "car",
+  "engine_sound_volume": 3.0,
+  "max_health": 20.0,
+  "armor_damage_factor": 1.0,
+  "damage_factor": 1.0,
+  "max_fuel": 600.0,
+  "inventory_size": 9,
+  "spawn_item": {
+    "display_name": "Sport Bike",
+    "tier": 4
+  },
+  "seats": [
+    {
+      "name": "rider",
+      "offset_x": 0.0,
+      "offset_y": 0.35,
+      "offset_z": -0.1,
+      "driver": true
+    }
+  ],
+  "wheel_parts": [
+    {
+      "part": "$wheel0",
+      "pivot_x": 0.0,
+      "pivot_y": 0.35,
+      "pivot_z": 0.85,
+      "steer_angle": 35.0,
+      "steer_axis_x": 0.0,
+      "steer_axis_y": 1.0,
+      "steer_axis_z": 0.0,
+      "steer_pivot_x": 0.0,
+      "steer_pivot_y": 0.35,
+      "steer_pivot_z": 0.85
+    },
+    {
+      "part": "$wheel1",
+      "pivot_x": 0.0,
+      "pivot_y": 0.35,
+      "pivot_z": -0.85
+    }
+  ],
+  "steering_wheel_parts": [
+    {
+      "part": "handlebar",
+      "pivot_x": 0.0,
+      "pivot_y": 1.55,
+      "pivot_z": 0.7,
+      "axis_x": 0.0,
+      "axis_y": 1.0,
+      "axis_z": 0.0,
+      "max_angle": 35.0
+    },
+    {
+      "part": "fork",
+      "pivot_x": 0.0,
+      "pivot_y": 0.95,
+      "pivot_z": 0.78,
+      "axis_x": 0.0,
+      "axis_y": 1.0,
+      "axis_z": 0.0,
+      "max_angle": 35.0
+    }
+  ],
+  "motorcycle": {
+    "max_lean_degrees": 60.0,
+    "lean_smoothing": 0.15,
+    "full_lean_speed": 0.35,
+    "upright_turn_penalty": 0.6,
+    "enable_acrobatics": true,
+    "wheelie_angle_degrees": 40.0,
+    "wheelie_rate": 0.08
+  }
+}

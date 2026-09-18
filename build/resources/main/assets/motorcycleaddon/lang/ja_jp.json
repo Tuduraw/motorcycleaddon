@@ -1,0 +1,15 @@
+{
+  "itemGroup.motorcycleaddon.motorcycles": "バイク",
+  "item.motorcycleaddon.category.motorcycle": "バイク",
+
+  "item.motorcycleaddon.motorcycle_spawner_t1": "バイク (ティア1)",
+  "item.motorcycleaddon.motorcycle_spawner_t2": "バイク (ティア2)",
+  "item.motorcycleaddon.motorcycle_spawner_t3": "バイク (ティア3)",
+  "item.motorcycleaddon.motorcycle_spawner_t4": "バイク (ティア4)",
+  "item.motorcycleaddon.motorcycle_spawner_t5": "バイク (ティア5)",
+
+  "entity.motorcycleaddon.motorcycle": "バイク",
+
+  "key.category.motorcycleaddon.motorcycle": "バイクアドオン",
+  "key.motorcycleaddon.acrobatics": "アクロバット走行(ウィリー)"
+}

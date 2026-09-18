@@ -1,0 +1,129 @@
+{
+  "entity_type": "motorcycleaddon:motorcycle",
+  "model": "motorcycleaddon:models/obj/bicycle.obj",
+  "texture": "motorcycleaddon:textures/vehicle/motorcycle.png",
+  "display_name": "Bicycle",
+  "scale": 1.0,
+  "width": 0.6,
+  "height": 1.1,
+  "max_speed": 0.4,
+  "acceleration": 0.04,
+  "turn_speed": 4.5,
+  "step_height": 0.5,
+  "gravity": -0.04,
+  "reverse_throttle": 0.3,
+  "weight_type": "car",
+  "engine_sound_volume": 3.0,
+  "max_health": 10.0,
+  "armor_damage_factor": 1.0,
+  "damage_factor": 1.0,
+  "max_fuel": 0.0,
+  "fuel_consumption": -1.0,
+  "inventory_size": 9,
+  "spawn_item": {
+    "display_name": "Bicycle",
+    "tier": 1
+  },
+  "seats": [
+    {
+      "name": "rider",
+      "offset_x": 0.0,
+      "offset_y": 0.35,
+      "offset_z": -0.45,
+      "driver": true
+    }
+  ],
+  "wheel_parts": [
+    {
+      "part": "$wheel0",
+      "pivot_x": 0.0,
+      "pivot_y": 0.35,
+      "pivot_z": 0.78,
+      "steer_angle": 32.0,
+      "steer_axis_x": 0.0,
+      "steer_axis_y": 1.0,
+      "steer_axis_z": 0.0,
+      "steer_pivot_x": 0.0,
+      "steer_pivot_y": 0.35,
+      "steer_pivot_z": 0.78
+    },
+    {
+      "part": "$wheel1",
+      "pivot_x": 0.0,
+      "pivot_y": 0.35,
+      "pivot_z": -0.78
+    }
+  ],
+  "steering_wheel_parts": [
+    {
+      "part": "handlebar",
+      "pivot_x": 0.0,
+      "pivot_y": 1.05,
+      "pivot_z": 0.62,
+      "axis_x": 0.0,
+      "axis_y": 1.0,
+      "axis_z": 0.0,
+      "max_angle": 32.0
+    },
+    {
+      "part": "fork",
+      "pivot_x": 0.0,
+      "pivot_y": 0.72,
+      "pivot_z": 0.7,
+      "axis_x": 0.0,
+      "axis_y": 1.0,
+      "axis_z": 0.0,
+      "max_angle": 32.0
+    }
+  ],
+  "crawler_tracks": [
+    {
+      "part": "$chain",
+      "x": 0.1,
+      "link_spacing": 0.12,
+      "path": [
+        {
+          "y": 0.40,
+          "z": 0.12
+        },
+        {
+          "y": 0.40,
+          "z": -0.80
+        },
+        {
+          "y": 0.30,
+          "z": -0.80
+        },
+        {
+          "y": 0.24,
+          "z": 0.12
+        }
+      ]
+    }
+  ],
+  "track_roller_parts": [
+    {
+      "part": "$crank0",
+      "pivot_x": 0.12,
+      "pivot_y": 0.30,
+      "pivot_z": 0.10,
+      "rotations_per_block": 0.25
+    },
+    {
+      "part": "$crank1",
+      "pivot_x": 0.12,
+      "pivot_y": 0.30,
+      "pivot_z": 0.10,
+      "rotations_per_block": 0.25
+    }
+  ],
+  "motorcycle": {
+    "max_lean_degrees": 45.0,
+    "lean_smoothing": 0.12,
+    "full_lean_speed": 0.18,
+    "upright_turn_penalty": 0.7,
+    "enable_acrobatics": false,
+    "wheelie_angle_degrees": 35.0,
+    "wheelie_rate": 0.08
+  }
+}

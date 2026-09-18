@@ -1,0 +1,93 @@
+{
+  "entity_type": "motorcycleaddon:motorcycle",
+  "model": "motorcycleaddon:models/obj/scooter.obj",
+  "texture": "motorcycleaddon:textures/vehicle/motorcycle.png",
+  "display_name": "Scooter",
+  "scale": 1.0,
+  "width": 0.7,
+  "height": 1.2,
+  "max_speed": 1.2,
+  "acceleration": 0.06,
+  "turn_speed": 4.0,
+  "step_height": 0.5,
+  "gravity": -0.04,
+  "reverse_throttle": 0.3,
+  "weight_type": "car",
+  "engine_sound_volume": 3.0,
+  "max_health": 16.0,
+  "armor_damage_factor": 1.0,
+  "damage_factor": 1.0,
+  "max_fuel": 400.0,
+  "inventory_size": 9,
+  "spawn_item": {
+    "display_name": "Scooter",
+    "tier": 2
+  },
+  "seats": [
+    {
+      "name": "rider",
+      "offset_x": 0.0,
+      "offset_y": 0.28,
+      "offset_z": -0.45,
+      "driver": true
+    },
+    {
+      "name": "pillion",
+      "offset_x": 0.0,
+      "offset_y": 0.28,
+      "offset_z": -0.75
+    }
+  ],
+  "wheel_parts": [
+    {
+      "part": "$wheel0",
+      "pivot_x": 0.0,
+      "pivot_y": 0.26,
+      "pivot_z": 0.62,
+      "steer_angle": 30.0,
+      "steer_axis_x": 0.0,
+      "steer_axis_y": 1.0,
+      "steer_axis_z": 0.0,
+      "steer_pivot_x": 0.0,
+      "steer_pivot_y": 0.26,
+      "steer_pivot_z": 0.62
+    },
+    {
+      "part": "$wheel1",
+      "pivot_x": 0.0,
+      "pivot_y": 0.26,
+      "pivot_z": -0.62
+    }
+  ],
+  "steering_wheel_parts": [
+    {
+      "part": "handlebar",
+      "pivot_x": 0.0,
+      "pivot_y": 1.16,
+      "pivot_z": 0.46,
+      "axis_x": 0.0,
+      "axis_y": 1.0,
+      "axis_z": 0.0,
+      "max_angle": 30.0
+    },
+    {
+      "part": "fork",
+      "pivot_x": 0.0,
+      "pivot_y": 0.62,
+      "pivot_z": 0.58,
+      "axis_x": 0.0,
+      "axis_y": 1.0,
+      "axis_z": 0.0,
+      "max_angle": 30.0
+    }
+  ],
+  "motorcycle": {
+    "max_lean_degrees": 18.0,
+    "lean_smoothing": 0.18,
+    "full_lean_speed": 0.25,
+    "upright_turn_penalty": 0.8,
+    "enable_acrobatics": false,
+    "wheelie_angle_degrees": 35.0,
+    "wheelie_rate": 0.08
+  }
+}

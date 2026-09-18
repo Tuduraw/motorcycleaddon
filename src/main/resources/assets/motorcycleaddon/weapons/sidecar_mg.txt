@@ -1,0 +1,52 @@
+; Sidecar machine gun - motorcycleaddon sample
+;
+; Read by the base mod's own WeaponStatsLoader, in the same MC Heli directive format its addon
+; packs use. Bundled inside this addon's jar at assets/<namespace>/weapons/<name>.txt; the
+; "weapon_name" in a vehicle JSON refers to this file's NAME (sidecar_mg), not its path.
+;
+; Values are deliberately modest - a pintle-mounted rifle-calibre gun, not an aircraft cannon.
+
+DisplayName = Sidecar MG
+; MachineGun2 follows the gunner's own view; MachineGun1 would be fixed forward.
+Type = MachineGun2
+
+; --- Ballistics ---
+Power = 3.0
+Explosion = 0.0
+Piercing = 1
+Accuracy = 3.0
+; Acceleration is projectile SPEED (MachineGun1/2 allow up to 100).
+Acceleration = 40.0
+Gravity = 0.03
+Length = 120
+Round = 1
+Bound = 0.5
+
+; --- Rate of fire and ammunition ---
+; Delay is ticks between shots: 2 gives 10 rounds/second.
+Delay = 2
+ReloadTime = 60
+MaxAmmo = 250
+SuppliedNum = 250
+
+; --- Handling ---
+RotationSpeed = 6.0
+Recoil = 0.2
+; RecoilBufCount = <duration ticks>, <recession rate multiplier>
+RecoilBufCount = 20, 5
+
+; --- Presentation ---
+; Sound is a bare file NAME (no namespace, no extension): the loader keys every
+; assets/<namespace>/sound(s)/<name>.ogg it finds by that file name alone. Omitting this directive
+; would look for "sidecar_mg_snd" instead.
+;
+; No .ogg ships with this sample, so unless a pack supplies one under this name the gun fires
+; SILENTLY - the sound lookup simply finds nothing and returns, it does not error. Drop a
+; sidecar_mg.ogg into assets/motorcycleaddon/sounds/ to give it a voice.
+Sound = sidecar_mg
+SoundVolume = 2.0
+SoundPitch = 1.2
+; BulletColor = A, R, G, B (0-255 each) - NOT a hex value.
+BulletColor = 255, 255, 224, 102
+; AddMuzzleFlash = distance, size, displayTicks, A, R, G, B
+AddMuzzleFlash = 0.6, 0.25, 2, 180, 255, 220, 150
