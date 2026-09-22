@@ -1,6 +1,6 @@
 # Motorcycle Addon
 
-Tudur's Vehicle Mod (`tudursvehiclemod`) のアドオンMODのサンプルです。
+Tudur's Vehicle Mod (`tudursvehiclemod`:https://github.com/Tuduraw/tudursvehiclemod) のアドオンMODのサンプルです。
 
 二輪車を5ティア分追加し、アドオンから何がどこまでできるのかを実際に
 動く形で示すことを目的としています。
